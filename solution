@@ -13,13 +13,13 @@ input.each_char do |char|
 		print " "
 	elsif (char.ord > 96) && (char.ord < 123)
   		ciphered = alfa.index(char) + cipher
-		if ciphered > alfa.size
+		while ciphered > alfa.size
 			ciphered -= alfa.size
 		end
 		print alfa[ciphered]
 	elsif (char.ord > 64) && (char.ord < 91)
   		ciphered = alfagroot.index(char) + cipher
-		if ciphered > alfagroot.size
+		while ciphered > alfagroot.size
 			ciphered -= alfagroot.size
 		end
 		print alfagroot[ciphered]
